@@ -49,6 +49,18 @@ The [interpretation](science/interpretation.md) explains why disclosure timing m
 
 The new claim is the solved destructive-detector calibration model and its consequences. Generic ancillary advantage, the zero-contrast rank numerator and exponential memory tradeoffs have established precedents.
 
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [learning entrypoint](learning/README.md) connects its foundations to this detector model without assigning additional textbooks.
+
+| Route | What it provides |
+|---|---|
+| [Two-qubit worked experiment](learning/WORKED_EXAMPLE.md) | Probe preparation, all fifteen settings, observed erasures, the Y-sign correction and a complete estimator |
+| [Watrous-to-project bridge](learning/WATROUS_BRIDGE.md) | Verified source sections, notation and log conventions, and the locally supplied Fisher, entropy and statistical arguments |
+| [Thirty-milestone map](learning/MILESTONES.md) | Twelve background milestones and eighteen narrative milestones, with understanding targets, dependencies and canonical proof pointers |
+
+The map is learner independent. It separates local Fisher information, global relative-entropy bounds and minimax rates; the scientific pages above remain the authoritative proofs.
+
 ## Reproduce the finite checks
 
 From the repository root:

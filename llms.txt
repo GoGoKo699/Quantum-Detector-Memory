@@ -30,7 +30,18 @@ Canonical files:
 - verification/README.md: executable checks, dependencies, outputs and limits.
 - verification/run_all.py: deterministic numerical verification entrypoint.
 
+Learning files:
+- learning/README.md: entrypoint and the single educational anchor, John Watrous,
+  The Theory of Quantum Information (2018).
+- learning/WATROUS_BRIDGE.md: verified sections, notation and logarithm conventions,
+  with locally supplied SLD, reverse-test, adaptive and statistical bridges.
+- learning/MILESTONES.md: exactly M01-M30; twelve background and eighteen narrative
+  milestones with questions, targets, dependencies, connections and proof pointers.
+- learning/WORKED_EXAMPLE.md: complete two-input-qubit, one-reference experiment,
+  all fifteen settings, Y-transpose sign, observed erasures and estimator.
+
 Reader routes:
+- Study: worked example, then the Watrous bridge alongside the milestone map.
 - Story: model, attaining protocol, interpretation.
 - Proof: model, then the appropriate Fisher/entropy/adaptive page.
 - Counterexample: single_parameter_counterexample and its cited source version.
@@ -62,3 +73,7 @@ Preserve these distinctions:
   purity inference in the pinned source; it is not a blanket rejection.
 - Finite numerical checks support matrix implementations, not universal
   theorem validity, exhaustive novelty or external peer review.
+- The learning map contains common understanding targets, not personal coaching
+  instructions or assessment records. Anchor selection does not establish mastery.
+- Watrous supplies foundations, not the project-specific SLD or detector theorems.
+  Primary research attribution remains necessary and is not a second textbook.
