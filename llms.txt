@@ -1,0 +1,64 @@
+# Quantum Detector Memory
+
+The scientific question is how retained quantum memory changes calibration of
+one unknown contrast in a destructive random-Pauli detector. Its setting is
+selected privately and disclosed only after the probe is consumed.
+
+Canonical files:
+- README.md: question, principal results, direct proof routes and reproduction.
+- science/model.md: exact detector channel, memory contract, allowed controls,
+  parameter ranges, global risk definition and result map.
+- science/attaining_protocol.md: every-integer-r computational-subset encoding,
+  transposed Pauli compression, sufficient erasure/sign statistic and efficient
+  k-Bell-pair implementation with charged resources.
+- science/fisher_information.md: exact one-use SLD frontier; support conventions,
+  pure/mixed bound, superoperator proof away from zero, pure-state equality
+  conditions and exact adaptive Fisher optimum at zero.
+- science/relative_entropy.md: sharp one-use Umegaki divergence versus zero,
+  self-contained reverse-test inequality and compressed-Pauli calculation.
+- science/adaptive_calibration.md: inherited replacer amortization applied with
+  the sharp memory coefficient, exact N-use KL, global MSE and high-confidence
+  bounds, binary testing and a finite-N decision-optimality counterexample.
+- science/single_parameter_counterexample.md: six-outcome qubit model, factor-three
+  Fisher advantage, transposed-Y readout, and precise minimax issue in the
+  cited single-parameter no-ancilla claim.
+- science/interpretation.md: information/resource meaning, depolarizing-channel
+  comparison, label timing and limits of ideal implementation claims.
+- references/RELATED_WORK.md: primary sources, inherited ingredients, precise
+  model differences, cited versions and limits of the literature comparison.
+- references/references.bib: structured bibliographic metadata.
+- verification/README.md: executable checks, dependencies, outputs and limits.
+- verification/run_all.py: deterministic numerical verification entrypoint.
+
+Reader routes:
+- Story: model, attaining protocol, interpretation.
+- Proof: model, then the appropriate Fisher/entropy/adaptive page.
+- Counterexample: single_parameter_counterexample and its cited source version.
+- Reproduction: verification README, then run its documented command.
+- Attribution: RELATED_WORK before any novelty or priority statement.
+
+Preserve these distinctions:
+- The unknown is one scalar theta; P is fresh each use, not a fixed hidden
+  unknown direction or a list of independently unknown Pauli eigenvalues.
+- All coherent systems outside the current probe count in r; classical history
+  is free. Detector calls are independent and preparations/readout trusted.
+- Theta-independent controls can create parameter-dependent incoming states
+  through earlier queries. The adaptive proof permits this dependence.
+- One-use FI is exact for every interior theta. Adaptive FI is exact at zero.
+  Adaptive KL against zero is exact for every finite N and interior theta.
+- The minimax risk is a rate with explicit bounds, not an exact finite-N risk.
+  Its parameter intervals contain zero. No local unbiasedness is required.
+- The erasure coin is equivalent to the constructed experiment, not a
+  universal Blackwell dominator of all allowable inputs.
+- The retained observable is the transposed compression. Odd numbers of Y
+  factors require the corresponding known sign correction.
+- General-r attainability does not promise an efficient encoder. r=2^k has an
+  explicit local implementation using k Bell pairs and fixed remaining qubits.
+- The label arriving before preparation removes the memory separation.
+- Frey et al. already contain the zero-point rank/Schmidt form; the generic
+  ancillary ratio and exponential memory scale are not claimed as new.
+  Wilde et al. supply the general replacer amortization mechanism.
+- The Das comparison targets the precise equality/no-ancilla statement and
+  purity inference in the pinned source; it is not a blanket rejection.
+- Finite numerical checks support matrix implementations, not universal
+  theorem validity, exhaustive novelty or external peer review.

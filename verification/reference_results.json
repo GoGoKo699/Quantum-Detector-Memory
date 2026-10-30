@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "complete_two_query_adaptive_protocols": 6,
+    "explicit_ancilla_readouts": 112,
+    "explicit_y_transpose_cases": 3,
+    "independent_matrix_diagnostics": 4,
+    "physical_measure_prepare_families": 14,
+    "physical_retained_memory_families": 14,
+    "qubit_decision_caveat_inputs": 2,
+    "random_mixed_families": 42,
+    "random_parameter_points": 468,
+    "random_pure_families": 42,
+    "rank_deficient_memory_families": 33,
+    "subset_parameter_points": 112,
+    "subset_state_families": 28
+  },
+  "dimensions": [
+    2,
+    4,
+    8
+  ],
+  "memory_dimensions": "every integer 1 <= r <= d",
+  "numpy": "2.3.5",
+  "observed_maxima": {
+    "adaptive_single_query_increment_excess": 2.7755575615628914e-17,
+    "adaptive_zero_point_cancellation_error": 1.6653345369377348e-16,
+    "block_entropy_vs_full_matrix_error": 2.7755575615628914e-16,
+    "block_sld_vs_full_matrix_error": 0.0,
+    "complete_output_trace_error": 2.220446049250313e-16,
+    "compressed_pauli_three_point_spectrum_error": 0.0,
+    "erasure_coin_distribution_error": 5.88418203051333e-15,
+    "nonzero_parameter_sld_bound_excess": 0.0,
+    "partial_trace_vs_kronecker_error": 1.388709218426854e-17,
+    "physical_family_derivative_error": 2.6718971457072706e-12,
+    "qubit_caveat_sld_error": 5.551115123125783e-17,
+    "qubit_caveat_total_variation_error": 1.3877787807814457e-17,
+    "random_entropy_bound_excess": 5.245803791353865e-15,
+    "random_sld_bound_excess": 5.551115123125783e-17,
+    "relative_entropy_negativity": 3.497202527569243e-15,
+    "retained_marginal_error": 2.220446049250313e-16,
+    "sld_support_kernel_tangent_error": 0.0,
+    "subset_entropy_frontier_error": 1.3877787807814457e-15,
+    "subset_sld_frontier_error": 7.105427357601002e-15,
+    "two_query_adaptive_fisher_excess": 1.1102230246251565e-16,
+    "two_query_complete_trace_error": 2.220446049250313e-16,
+    "two_query_derivative_trace_error": 2.7755575615628914e-17,
+    "y_transpose_corrected_correlation_error": 1.6653345369377348e-16,
+    "y_transpose_uncorrected_sign_error": 1.6653345369377348e-16
+  },
+  "python": "3.12.14",
+  "scope": "Finite deterministic numerical corroboration; the analytical proofs establish the general results.",
+  "seed": 20261030,
+  "status": "pass",
+  "theta_values": [
+    0.0,
+    0.2,
+    -0.6,
+    0.9
+  ],
+  "tolerances": {
+    "absolute": 3e-09,
+    "eigenvalue_cutoff": 1e-12,
+    "finite_difference_absolute": 3e-08,
+    "finite_difference_step": 1e-05,
+    "matrix_support": 2e-11,
+    "relative": 3e-09
+  }
+}
