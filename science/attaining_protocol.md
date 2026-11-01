@@ -49,7 +49,7 @@ If $`a=0`$, the compression is diagonal with entries $`\pm1`$. If $`a\ne0`$, the
 and eigenvalues $`\pm1`$. A retained vertex whose partner lies outside $`C`$ gives a zero block. Transposition preserves this spectrum. Therefore
 
 ```math
-\operatorname{spec}(Q_P)\subseteq\{-1,0,+1\},
+\mathrm{spec}(Q_P)\subseteq\{-1,0,+1\},
 \qquad Q_P^3=Q_P.
 ```
 
@@ -66,7 +66,7 @@ In any fixed eigenbasis of $`Q_P`$, a record $`(P,s,t,\alpha)`$ has probability
 where $`\alpha`$ indexes the eigenspace multiplicity. The [Pauli compression identity](fisher_information.md#pauli-identities) gives
 
 ```math
-L:=\sum_{P\ne I}\operatorname{rank}Q_P
+L:=\sum_{P\ne I}\mathrm{rank}\,Q_P
 =\sum_{P\ne I}\operatorname{Tr}Q_P^2
 =r(dr-1).
 ```
