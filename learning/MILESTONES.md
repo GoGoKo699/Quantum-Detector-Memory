@@ -284,7 +284,7 @@ Each milestone specifies a question, an understanding target, earlier dependenci
 
 **Dependencies and story role:** M07, M18, M19, M22. Connect the stated mechanism to the eventual memory law.
 
-**Conceptual connection:** The parameter-independent construction saturates a bound that is global in the parameter pair.
+**Conceptual connection:** The parameter-independent construction saturates the bound for the finite comparison of theta against zero, beyond a local expansion.
 
 **Source pointers:** Watrous 1.1.3; 1.2.1; 5.2.3; [canonical scientific account](../science/relative_entropy.md).
 
@@ -316,7 +316,7 @@ Each milestone specifies a question, an understanding target, earlier dependenci
 
 **Central question:** How do the construction and adaptive converse give a matching minimax law?
 
-**Understanding target:** Connect the clipped unbiased estimator, the zero estimator and the two-point lower bound, including the small-data regime.
+**Understanding target:** Connect the unbiased estimator and its clipped version, the zero estimator and the two-point lower bound, including the small-data regime.
 
 **Dependencies and story role:** M11, M19, M24. Connect the stated mechanism to the eventual memory law.
 

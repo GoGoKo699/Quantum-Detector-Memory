@@ -25,7 +25,7 @@ This is a selective route, not an assignment to read the entire book. The manusc
 
 A column vector $`u`$ in the anchor becomes $`|u\rangle`$ here, and $`uv^*`$ becomes $`|u\rangle\langle v|`$. The adjoint $`A^*`$ is written $`A^\dagger`$. A state is a positive operator of trace one. The trace over the probe is $`\operatorname{Tr}_S`$, leaving the retained reference $`R`$.
 
-The input space has dimension $`d=2^n`$. The integer $`r`$ is a Hilbert-space dimension, not a qubit count: $`r=2^k`$ corresponds to $`k`$ retained qubits. A Schmidt rank $`q`$ of a pure input satisfies $`q\leq r`$. An accessible purification is part of the memory budget, not an extra free register used to justify a proof.
+The input space has dimension $`d=2^n`$, with integer $`n\geq1`$. Throughout, $`r`$ is an integer satisfying $`1\leq r\leq d`$, the contrast obeys $`|\theta|<1`$, and a statistical experiment uses a positive integer $`N`$ of charged detector calls. The integer $`r`$ is a Hilbert-space dimension, not a qubit count: $`r=2^k`$ corresponds to $`k`$ retained qubits. A Schmidt rank $`q`$ of a pure input satisfies $`q\leq r`$. All accessible retained coherent systems outside the current probe count jointly toward $`r`$, conditional on the classical history. An accessible purification is part of that memory budget, not an extra free register used to justify a proof.
 
 We use the natural-log relative entropy
 
