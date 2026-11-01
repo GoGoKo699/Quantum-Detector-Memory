@@ -25,7 +25,7 @@ The formula concerns dimension available during a call. It does not price the cr
 For physical depolarizing parameters, write
 
 ```math
-\Gamma_\theta(A)=\theta A+(1-\theta)\operatorname{Tr}(A)\frac{I}{d}.
+\Gamma_\theta(A)=\theta A+(1-\theta)\mathrm{Tr}(A)\frac{I}{d}.
 ```
 
 Let $`\mathcal M`$ be ideal uniformly randomized nonidentity-Pauli measurement with its label retained. Then
