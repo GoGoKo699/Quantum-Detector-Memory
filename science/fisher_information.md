@@ -17,7 +17,7 @@ For every interior visibility $`|\theta|\lt1`$, the largest output symmetric log
 ```math
 \boxed{
 \sup_{\rho_{SR}:\,\dim R\leq r}
-F_Q\!\left[(\Lambda_\theta\otimes\operatorname{id}_R)(\rho_{SR})\right]
+F_Q\!\left[(\Lambda_\theta\otimes\mathrm{id}_R)(\rho_{SR})\right]
 =\frac{c_r}{1-\theta^2}.
 }
 ```
@@ -45,7 +45,7 @@ For a positive operator $`A`$, define the Jordan superoperator
 For a compatible Hermitian tangent $`T`$, write
 
 ```math
-g_A(T,T)=\operatorname{Tr}\!\left[T\mathcal J_A^+(T)\right]
+g_A(T,T)=\mathrm{Tr}\!\left[T\mathcal J_A^+(T)\right]
 =\sum_{a,b:\lambda_a+\lambda_b\gt0}
 \frac{2|T_{ab}|^2}{\lambda_a+\lambda_b},
 ```
@@ -65,16 +65,16 @@ The variational formula
 
 ```math
 g_A(T,T)=\sup_{L=L^\dagger}
-\left\{2\operatorname{Tr}(TL)-\operatorname{Tr}(AL^2)\right\}
+\left\{2\mathrm{Tr}(TL)-\mathrm{Tr}(AL^2)\right\}
 ```
 
 shows that $`g`$ is jointly convex in the state and tangent. It also gives data processing. For a channel $`\Phi`$, put $`K=\Phi^\dagger(L)`$. The Kadison inequality for its unital completely positive adjoint gives
 
 ```math
 \begin{aligned}
-2\operatorname{Tr}[\Phi(T)L]-\operatorname{Tr}[\Phi(A)L^2]
-&=2\operatorname{Tr}(TK)-\operatorname{Tr}[A\Phi^\dagger(L^2)]\\
-&\leq2\operatorname{Tr}(TK)-\operatorname{Tr}(AK^2)\\
+2\mathrm{Tr}[\Phi(T)L]-\mathrm{Tr}[\Phi(A)L^2]
+&=2\mathrm{Tr}(TK)-\mathrm{Tr}[A\Phi^\dagger(L^2)]\\
+&\leq2\mathrm{Tr}(TK)-\mathrm{Tr}(AK^2)\\
 &\leq g_A(T,T).
 \end{aligned}
 ```
@@ -86,9 +86,9 @@ Taking the supremum proves that parameter-independent channels, including measur
 The identity-inclusive Hermitian Pauli basis obeys
 
 ```math
-\operatorname{Tr}(PQ)=d\,\delta_{P,Q},
+\mathrm{Tr}(PQ)=d\,\delta_{P,Q},
 \qquad
-\sum_P P A P=d\operatorname{Tr}(A)I_d.
+\sum_P P A P=d\mathrm{Tr}(A)I_d.
 ```
 
 Parseval's identity therefore gives, for orthonormal vectors $`|u_a\rangle`$ and $`|u_b\rangle`$,
@@ -119,12 +119,12 @@ These identities fix the dimension dependence in both the upper bound and the at
 For a fixed joint input, use the [model's output blocks](model.md), with
 
 ```math
-\sigma_R=\operatorname{Tr}_S\rho_{SR},
+\sigma_R=\mathrm{Tr}_S\,\rho_{SR},
 \qquad
-B_P=\operatorname{Tr}_S[(P\otimes I_R)\rho_{SR}].
+B_P=\mathrm{Tr}_S[(P\otimes I_R)\rho_{SR}].
 ```
 
-The block labelled $`(P,s)`$ is $`(\sigma_R+s\theta B_P)/(2M)`$. Positivity implies $`-\sigma_R\preceq B_P\preceq\sigma_R`$, so $`B_P`$ is supported on $`\operatorname{supp}\sigma_R`$.
+The block labelled $`(P,s)`$ is $`(\sigma_R+s\theta B_P)/(2M)`$. Positivity implies $`-\sigma_R\preceq B_P\preceq\sigma_R`$, so $`B_P`$ is supported on $`\mathrm{supp}\,\sigma_R`$.
 
 First take a pure state of Schmidt rank $`q\leq r`$,
 
@@ -136,7 +136,7 @@ First take a pure state of Schmidt rank $`q\leq r`$,
 \quad\sum_a\lambda_a=1.
 ```
 
-With $`\Lambda=\operatorname{diag}(\lambda_1,\ldots,\lambda_q)`$ and $`V|a\rangle=|u_a\rangle`$, direct partial tracing gives
+With $`\Lambda=\mathrm{diag}(\lambda_1,\ldots,\lambda_q)`$ and $`V|a\rangle=|u_a\rangle`$, direct partial tracing gives
 
 ```math
 \sigma_R=\Lambda,
@@ -179,7 +179,7 @@ A mixed input has a pure-state convex decomposition with parameter-independent w
 
 ## The upper bound at nonzero visibility
 
-Fix an arbitrary input and one Pauli label. In this subsection, restrict to $`\operatorname{supp}\sigma_R`$, where $`\sigma_R`$ is positive definite, and write $`B=B_P`$. Define
+Fix an arbitrary input and one Pauli label. In this subsection, restrict to $`\mathrm{supp}\,\sigma_R`$, where $`\sigma_R`$ is positive definite, and write $`B=B_P`$. Define
 
 ```math
 K=\mathcal J_{\sigma_R}^{-1/2}
@@ -221,7 +221,7 @@ For a uniform rank-$`q`$ state, the Fisher information is
 
 ```math
 F_\psi(\theta)=\frac1{Mq}\sum_{P\ne I}
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 Q_P^2(I-\theta^2Q_P^2)^{-1}\right],
 \qquad Q_P=(V^\dagger PV)^{\mathsf T}.
 ```
@@ -263,11 +263,11 @@ Equality is attained by repeated uses of the [erasure-coin experiment](attaining
 Let the incoming family be $`\rho_{SR}(\theta)`$. At zero, put
 
 ```math
-\sigma_R=\operatorname{Tr}_S\rho_{SR}(0),
+\sigma_R=\mathrm{Tr}_S\,\rho_{SR}(0),
 \qquad
-T=\operatorname{Tr}_S\dot\rho_{SR}(0),
+T=\mathrm{Tr}_S\,\dot\rho_{SR}(0),
 \qquad
-B_P=\operatorname{Tr}_S[(P\otimes I)\rho_{SR}(0)].
+B_P=\mathrm{Tr}_S[(P\otimes I)\rho_{SR}(0)].
 ```
 
 The output block derivative is

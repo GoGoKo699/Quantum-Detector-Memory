@@ -16,9 +16,9 @@ All logarithms are natural. The function $`h(\theta)`$ is the relative entropy o
 ```math
 \sup_{\rho_{SR}:\,\dim R\leq r}
 D\!\left(
-(\Lambda_\theta\otimes\operatorname{id}_R)(\rho)
+(\Lambda_\theta\otimes\mathrm{id}_R)(\rho)
 \,\middle\Vert\,
-(\Lambda_0\otimes\operatorname{id}_R)(\rho)
+(\Lambda_0\otimes\mathrm{id}_R)(\rho)
 \right)
 =c_rh(\theta).
 ```
@@ -30,11 +30,11 @@ The input is the same under the two parameters. A single parameter-independent i
 For a state $`\rho_{SR}`$, define
 
 ```math
-\sigma_R=\operatorname{Tr}_S\rho,
+\sigma_R=\mathrm{Tr}_S\,\rho,
 \qquad
-B_P=\operatorname{Tr}_S[(P\otimes I_R)\rho],
+B_P=\mathrm{Tr}_S[(P\otimes I_R)\rho],
 \qquad
-\tau_\theta(\rho)=(\Lambda_\theta\otimes\operatorname{id}_R)(\rho).
+\tau_\theta(\rho)=(\Lambda_\theta\otimes\mathrm{id}_R)(\rho).
 ```
 
 The classical detector output labels orthogonal blocks:
@@ -51,7 +51,7 @@ Partial-trace cyclicity makes $`B_P`$ Hermitian, and positivity of $`I\pm P`$ gi
 -\sigma_R\leq B_P\leq\sigma_R.
 ```
 
-Thus $`B_P`$ is supported on $`\operatorname{supp}\sigma_R`$. If $`u_X=I_X/(2M)`$ is the uniform detector-output state, then
+Thus $`B_P`$ is supported on $`\mathrm{supp}\,\sigma_R`$. If $`u_X=I_X/(2M)`$ is the uniform detector-output state, then
 
 ```math
 \tau_0(\rho)=u_X\otimes\sigma_R,
@@ -64,24 +64,24 @@ Thus $`B_P`$ is supported on $`\operatorname{supp}\sigma_R`$. If $`u_X=I_X/(2M)`
 The two output states therefore have the same support in the interior parameter interval. Their relative entropy is finite, and all inverses below act only on the specified support. The retained marginal is unchanged:
 
 ```math
-\operatorname{Tr}_X\tau_\theta(\rho)=\sigma_R.
+\mathrm{Tr}_X\,\tau_\theta(\rho)=\sigma_R.
 ```
 
 ## A reverse-test upper bound
 
 We use an established relation between Umegaki and maximal relative entropy, with a short proof that fixes its operator ordering and support convention. This reverse-test method is due to [Matsumoto](../references/RELATED_WORK.md#matsumoto2010).
 
-**Lemma.** Let $`A,B`$ be density operators with $`\operatorname{supp}A\subseteq\operatorname{supp}B`$, and set
+**Lemma.** Let $`A,B`$ be density operators with $`\mathrm{supp}\,A\subseteq\mathrm{supp}\,B`$, and set
 
 ```math
 X=B^{-1/2}AB^{-1/2}
 ```
 
-on $`\operatorname{supp}B`$. With $`0\log0=0`$,
+on $`\mathrm{supp}\,B`$. With $`0\log0=0`$,
 
 ```math
 D(A\Vert B)\leq
-\operatorname{Tr}[B\,X\log X]
+\mathrm{Tr}[B\,X\log X]
 =:\widehat D(A\Vert B).
 ```
 
@@ -104,7 +104,7 @@ Since $`B`$ is faithful on its support, $`q_j\gt0`$. Both $`p`$ and $`q`$ are pr
 D(A\Vert B)
 \leq D(p\Vert q)
 =\sum_jq_jx_j\log x_j
-=\operatorname{Tr}[B\,X\log X].
+=\mathrm{Tr}[B\,X\log X].
 ```
 
 Zero eigenvalues of $`X`$ contribute zero. Simultaneous diagonalization proves equality in the commuting case. $`\square`$
@@ -127,7 +127,7 @@ Let the input have Schmidt rank $`q\leq r`$:
 Let $`U:\mathbb C^q\to\mathbb C^d`$ be the Schmidt isometry, $`U|a\rangle=|u_a\rangle`$, and set $`\Pi=UU^\dagger`$. On the memory support,
 
 ```math
-\sigma_R=\operatorname{diag}(\lambda_1,\ldots,\lambda_q),
+\sigma_R=\mathrm{diag}(\lambda_1,\ldots,\lambda_q),
 \qquad
 Q_P=(U^\dagger P U)^{\mathsf T},
 \qquad
@@ -158,10 +158,10 @@ Apply the reverse-test lemma to the complete normalized output states. Their rel
 D(\tau_\theta(\psi)\Vert\tau_0(\psi))
 &\leq
 \frac1{2M}\sum_{P,s}
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 \sigma_R(I+s\theta Q_P)\log(I+s\theta Q_P)
 \right]\\
-&=\frac1M\sum_P\operatorname{Tr}[\sigma_Rh(\theta Q_P)].
+&=\frac1M\sum_P\mathrm{Tr}[\sigma_Rh(\theta Q_P)].
 \end{aligned}
 ```
 
@@ -181,7 +181,7 @@ has nonnegative coefficients. Hence $`h(\theta x)\leq x^2h(\theta)`$ for $`|x|\l
 D(\tau_\theta(\psi)\Vert\tau_0(\psi))
 &\leq
 \frac{h(\theta)}M
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 \sigma_R\sum_PQ_P^2
 \right]\\
 &=\frac{dq-1}{M}h(\theta)

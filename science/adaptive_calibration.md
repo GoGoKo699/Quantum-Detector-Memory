@@ -19,7 +19,7 @@ Write
 
 ```math
 \tau_\theta(\rho)
-=(\Lambda_\theta\otimes\operatorname{id}_R)(\rho).
+=(\Lambda_\theta\otimes\mathrm{id}_R)(\rho).
 ```
 
 For any incoming state $`\eta_{SR}`$,
@@ -170,7 +170,7 @@ D(\omega_\Delta\Vert\omega_0)
 \leq\frac12.
 ```
 
-Let $`P_\Delta,P_0`$ be the classical laws of its final estimator. Data processing and Pinsker's inequality imply $`\operatorname{TV}(P_\Delta,P_0)\leq1/2`$.
+Let $`P_\Delta,P_0`$ be the classical laws of its final estimator. Data processing and Pinsker's inequality imply $`\mathrm{TV}(P_\Delta,P_0)\leq1/2`$.
 
 Threshold the estimate at $`\Delta/2`$ to test zero against $`\Delta`$. A test error under either hypothesis incurs squared estimation error at least $`\Delta^2/4`$. Hence
 
@@ -182,7 +182,7 @@ Threshold the estimate at $`\Delta/2`$ to test zero against $`\Delta`$. A test e
 \left[P_0(\text{choose }\Delta)
       +P_\Delta(\text{choose }0)\right]\\
 &\geq\frac{\Delta^2}{8}
-\left[1-\operatorname{TV}(P_\Delta,P_0)\right]\\
+\left[1-\mathrm{TV}(P_\Delta,P_0)\right]\\
 &\geq\frac{\Delta^2}{16}\\
 &\geq\frac1{32}\min\!\left\{a^2,\frac1{Nc_r}\right\}.
 \end{aligned}
@@ -286,7 +286,7 @@ For $`d=2,r=1`$ and a pure probe with Bloch vector $`v`$,
 ```math
 p_\theta(a,s)=\frac{1+s\theta v_a}{6},
 \qquad
-\operatorname{TV}(p_\theta,p_0)
+\mathrm{TV}(p_\theta,p_0)
 =\frac{|\theta|}{6}
 \sum_{a=x,y,z}|v_a|.
 ```
@@ -294,7 +294,7 @@ p_\theta(a,s)=\frac{1+s\theta v_a}{6},
 A Pauli eigenstate, which attains the entropy frontier, gives total variation $`|\theta|/6`$. The valid pure state $`v=(1,1,1)/\sqrt3`$ instead gives
 
 ```math
-\operatorname{TV}(p_\theta,p_0)=\frac{|\theta|}{2\sqrt3},
+\mathrm{TV}(p_\theta,p_0)=\frac{|\theta|}{2\sqrt3},
 ```
 
 which is larger. Its one-call equal-prior discrimination error is therefore smaller. The erased-sign experiment does not dominate all other probe experiments in the Blackwell sense.

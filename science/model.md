@@ -18,7 +18,7 @@ These effects are positive and sum to the identity. The corresponding channel is
 
 ```math
 \Lambda_\theta(A)
-=\sum_{P,s}\operatorname{Tr}[E_{P,s}(\theta)A]\,
+=\sum_{P,s}\mathrm{Tr}[E_{P,s}(\theta)A]\,
    \lvert P,s\rangle\langle P,s\rvert .
 ```
 
@@ -47,11 +47,11 @@ For $`r=2^k`$, this is a cap of $`k`$ retained qubits during each invocation, in
 For an input state $`\rho_{SR}`$, define
 
 ```math
-\sigma_R=\operatorname{Tr}_S\rho_{SR},
+\sigma_R=\mathrm{Tr}_S\,\rho_{SR},
 \qquad
-B_P=\operatorname{Tr}_S[(P\otimes I_R)\rho_{SR}],
+B_P=\mathrm{Tr}_S[(P\otimes I_R)\rho_{SR}],
 \qquad
-\tau_\theta(\rho)=(\Lambda_\theta\otimes\operatorname{id}_R)(\rho).
+\tau_\theta(\rho)=(\Lambda_\theta\otimes\mathrm{id}_R)(\rho).
 ```
 
 Then

@@ -23,7 +23,7 @@ This is a selective route, not an assignment to read the entire book. The manusc
 
 ## Notation and conventions
 
-A column vector $`u`$ in the anchor becomes $`|u\rangle`$ here, and $`uv^*`$ becomes $`|u\rangle\langle v|`$. The adjoint $`A^*`$ is written $`A^\dagger`$. A state is a positive operator of trace one. The trace over the probe is $`\operatorname{Tr}_S`$, leaving the retained reference $`R`$.
+A column vector $`u`$ in the anchor becomes $`|u\rangle`$ here, and $`uv^*`$ becomes $`|u\rangle\langle v|`$. The adjoint $`A^*`$ is written $`A^\dagger`$. A state is a positive operator of trace one. The trace over the probe is $`\mathrm{Tr}_S`$, leaving the retained reference $`R`$.
 
 The input space has dimension $`d=2^n`$, with integer $`n\geq1`$. Throughout, $`r`$ is an integer satisfying $`1\leq r\leq d`$, the contrast obeys $`|\theta|<1`$, and a statistical experiment uses a positive integer $`N`$ of charged detector calls. The integer $`r`$ is a Hilbert-space dimension, not a qubit count: $`r=2^k`$ corresponds to $`k`$ retained qubits. A Schmidt rank $`q`$ of a pure input satisfies $`q\leq r`$. All accessible retained coherent systems outside the current probe count jointly toward $`r`$, conditional on the classical history. An accessible purification is part of that memory budget, not an extra free register used to justify a proof.
 
@@ -31,7 +31,7 @@ We use the natural-log relative entropy
 
 ```math
 D(\rho\Vert\sigma)
-=\operatorname{Tr}[\rho(\ln\rho-\ln\sigma)].
+=\mathrm{Tr}[\rho(\ln\rho-\ln\sigma)].
 ```
 
 When an entropic quantity in the anchor is expressed using base-two logarithms, multiply it by $`\ln2`$ to obtain this convention. It is finite only when the numerator's support is contained in the denominator's support. The classical convention is $`D(p\Vert q)=\sum_xp_x\ln(p_x/q_x)`$. Total variation is half the classical one-norm; quantum trace distance is half the trace norm. These factors matter in the testing proof.
@@ -54,9 +54,9 @@ With a reference, the appropriate output is not just the probability of each lab
 ```
 
 ```math
-\sigma_R=\operatorname{Tr}_S\rho_{SR},
+\sigma_R=\mathrm{Tr}_S\,\rho_{SR},
 \qquad
-B_P=\operatorname{Tr}_S[(P\otimes I_R)\rho_{SR}].
+B_P=\mathrm{Tr}_S[(P\otimes I_R)\rho_{SR}].
 ```
 
 A block's trace is its outcome probability. The complete block-diagonal operator has trace one. Discarding the detector outcome leaves $`\sigma_R`$, independent of the detector action. At zero contrast the output is a uniform classical record tensored with that same marginal. These facts connect the measurement definitions in Chapter 2 to the eventual adaptive proof.
@@ -72,7 +72,7 @@ F(\theta)=\sum_{x:p_x(\theta)>0}
 
 It measures local sensitivity, not the error of an arbitrary finite-data estimator. A sign of mean $`\theta`$ has probabilities $`(1\pm\theta)/2`$ and Fisher information $`1/(1-\theta^2)`$.
 
-For a differentiable state family, the symmetric logarithmic derivative $`L`$ solves $`(\rho L+L\rho)/2=\dot\rho`$. Its information is $`F_Q=\operatorname{Tr}(\rho L^2)`$. The canonical [Fisher page](../science/fisher_information.md) develops the equivalent quadratic form
+For a differentiable state family, the symmetric logarithmic derivative $`L`$ solves $`(\rho L+L\rho)/2=\dot\rho`$. Its information is $`F_Q=\mathrm{Tr}(\rho L^2)`$. The canonical [Fisher page](../science/fisher_information.md) develops the equivalent quadratic form
 
 ```math
 g_A(T,T)=
@@ -134,7 +134,7 @@ With $`N`$ independent trials, $`\mathbb E Z=c_r\theta`$ and $`\mathbb E Z^2=c_r
 ```math
 \widetilde\theta=\frac1{Nc_r}\sum_{i=1}^N Z_i,
 \qquad
-\operatorname{Var}(\widetilde\theta)
+\mathrm{Var}(\widetilde\theta)
 =\frac1{Nc_r}-\frac{\theta^2}{N}.
 ```
 

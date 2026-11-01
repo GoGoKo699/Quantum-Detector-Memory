@@ -88,7 +88,7 @@ This is compatible with the existence of classical-output channels that have no 
 For one-call testing against zero, the unassisted experiment has
 
 ```math
-\operatorname{TV}(p_\theta,p_0)
+\mathrm{TV}(p_\theta,p_0)
 =\frac{|\theta|}{6}\sum_a|v_a|.
 ```
 

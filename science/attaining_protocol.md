@@ -67,7 +67,7 @@ where $`\alpha`$ indexes the eigenspace multiplicity. The [Pauli compression ide
 
 ```math
 L:=\sum_{P\ne I}\mathrm{rank}\,Q_P
-=\sum_{P\ne I}\operatorname{Tr}Q_P^2
+=\sum_{P\ne I}\mathrm{Tr}\,Q_P^2
 =r(dr-1).
 ```
 
